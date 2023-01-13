@@ -1,0 +1,103 @@
+
+
+
+.single-img{
+    width: 100%;
+    height: 400px;
+}
+
+.single-img #imgPost{
+    width: 90%;
+    height: 400px;
+    border-radius: 10px;
+}
+
+.single-title{
+    width: 80%;
+    text-align: left;
+    margin-left: 5%;
+}
+
+.single-title h1{
+    font-weight: bolder;
+}
+.single-title p{
+    color: gray;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bolder;
+}
+
+.menu hr{
+    color: red;
+    border: 1px solid;
+}
+
+.single-content{
+    width: 80%;
+    text-align: left;
+    margin-left: 5%;
+}
+
+.single-content p{
+    font-size: 25px;
+    color: #262626;
+}
+
+.single-detalhes{
+    width: 80%;
+    margin-left: 5%;
+}
+
+.single-detalhes h5{
+    margin-left: 12%;
+    margin-top: -1%;
+    text-align: left;
+}
+
+.share{
+    text-align: right;
+}
+
+.share a{
+    font-size: 30px;
+    padding-left: 1%;
+}
+
+.single-detalhes-img{
+    width: 8%;
+    height: 60px;
+    margin-top: -6%;
+}
+
+.single-detalhes-img img{
+    width: 100%;
+    height: 60px;
+    border-radius: 30px;
+}
+
+.single-details a{
+    text-decoration: none;
+    color:black;
+}
+
+
+
+@media (max-width:768px){
+    .single-detalhes-img{
+        width: 14%;
+        margin-top: -10%;
+    }
+    .single-detalhes h5{
+        margin-left: 14%;
+    }
+}
+
+@media (max-width:421px){
+    .single-detalhes-img{
+        width: 22%;
+    }
+    .single-detalhes h5{
+        margin-left: 22%;
+    }
+}
+

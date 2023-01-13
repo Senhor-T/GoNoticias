@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@1,900&display=swap');
+
+.menu{
+    background-color: #efefef;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 5px 15px 0px, rgba(0, 0, 0, 0.09) 0px 0px 0px 1px;
+}
+
+
+
+.navLink{
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 25px;
+    font-weight: bolder;
+    text-decoration: none;
+    color: white;
+}
+
+.navLink b{
+    color: #FFE15D;
+    font-size: 30px;
+}
+ .navLink:hover{
+    color: white;
+ }
+
+.mx-auto{
+    width: 50%;
+    text-align: right;
+    position: relative;
+}
+
+.mx-auto form{
+    position: relative;
+    display:inline-block;
+}
+
+.mx-auto input:focus, input:focus, select:focus{
+  
+    box-shadow: 0 2px 4px 2px #FFE15D;
+    border: 0 solid;
+    outline: 0;
+}
+
+.nav-content{
+    font-size: 18px;
+}
+
+.nav-content a{
+    color: #636f7a !important;
+    font-weight: bold;
+
+}
+
+.nav-content a:hover{
+    color: #DC3535 !important;
+}
+
+
+
+
+.profile-photo{
+    width: 100%;
+    height: 60px;
+    margin-top: -6%;
+}
+
+.profile-photo img{
+    width: 100%;
+    height: 60px;
+    border-radius: 30px;
+}
+
+.dropdown-profile{
+    text-decoration: none;
+}
+
+
+.active{
+    border-bottom: 3px solid #FFE15D;
+}
+
+@media (max-width:544px){
+    .dropdown-profile-div{
+        margin-left: 60%;
+    }
+}
+
+@media (max-width:441px){
+    .mx-auto form{
+        width: 250px;
+        margin-left: -10%;
+    }
+}
+
+@media (max-width:317px){
+    .mx-auto form{
+        width: 250px;
+        margin-left: -30%;
+    }
+}
+
+
+

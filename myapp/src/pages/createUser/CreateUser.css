@@ -1,0 +1,56 @@
+
+.top-login{
+    height: 100px;
+}
+
+.top-login-img{
+    width: 70%;
+    margin-left: 15%;
+}
+
+.top-login-img svg{
+    font-size: 90px;
+
+}
+
+
+.form-user{
+    width: 50%;
+    height: 450px;
+    background-color: white;
+    margin-left: 25%;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+
+.form-user input{
+    width: 90%;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 1px;
+}
+
+
+.mb-3{
+    text-align: left;
+    padding-left: 50px;
+}
+
+.body-login{
+    background-color: #efefef;
+}
+
+.body-login br{
+    height: 300px;
+}
+
+#form-create-user{
+    height: 580px;
+}
+
+@media (max-width:560px){
+    .form-user{
+        width: 90%;
+        margin-left: 4%;
+    }
+}

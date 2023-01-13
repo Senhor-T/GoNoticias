@@ -1,0 +1,249 @@
+
+.div-img{
+    width: 100%;
+    margin-top: 7%;
+    margin-left: -20px;
+}
+
+.img-top{
+    width: 95%;
+    height:280px;
+    border-radius: 15px;
+    margin-left: 1%;
+}
+
+.col-img-top h2{
+    text-align: left;
+    width: 80%;
+    margin-left: 20px;
+    font-weight: bolder;
+}
+
+.col-img-top a{
+    text-decoration: none;
+    color: black;
+}
+
+.recente{
+    width: 100%;
+    display: inline-flex;
+   margin-top: -20%;
+    margin-left: -10%;
+    height: 200px;
+    
+}
+
+
+
+.recente h6{
+    width: 200px;
+    margin-left: 5%;
+    text-align: left;
+    height: 100px;
+    
+}
+
+.recente img{
+    border-radius: 10px;
+    max-width: 150px;
+    height: 120px;
+    width: auto;
+}
+
+.recente a{
+    text-decoration: none;
+    color: black;
+}
+
+.col-mais-recentes{
+    background-color: white;
+    height: 420px;
+    margin-top: 7%;
+}
+
+
+
+.col-mais{
+    height: 200px;
+
+}
+
+.div-moment{
+    width: 90%;
+}
+
+
+.col-mais p{
+    width: 22%;
+    margin-top: -15%;
+    margin-left: 40%;
+    color: gray;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bolder;
+    overflow: auto;
+    
+}
+
+.div-img-mais{
+    width: 100%;
+    height: 120px;
+ 
+}
+
+.col-mais img{
+    border-radius: 10px;
+    max-width: 150px;
+    height: 120px;
+    width: auto;
+    margin-top: -20px;
+}
+
+
+
+
+.box-ultima-single{
+    display: inline-flex;
+    margin-left: -20%;
+    height: 200px;
+    padding:50px;
+}
+
+.box-ultima-single a{
+    text-decoration: none;
+    color: black;
+}
+
+
+.conteudo-noticia-single h4{
+    width: 200px;
+    margin-top: -0%;
+    margin-left: 5px;
+    font-size: 15px;
+    text-align: left;
+}
+
+.center{
+    background-color: #EAEAEA;
+    margin-top: 5%;
+}
+.center h2{
+    font-weight: bolder;
+}
+
+.title-recomendados{
+    font-weight: bolder;
+}
+
+.box-recomendados{
+    width: 100%;
+    height: 140px;
+    display: inline-flex;
+    background-color: #EAEAEA;
+    border-radius: 10px;
+    
+}
+
+.box-recomendados h4{
+    margin-left: 20px;
+    text-align: left;
+    width: 90%;
+    height: 170px;
+    font-size: 100%
+    /* color:#1087ff; */
+    
+}
+
+
+.box-recomendados img{
+    width: 250px;
+    border-radius: 10px;
+}
+
+.box-recomendados a{
+    text-decoration: none;
+    color: black;
+    height: 50px;
+}
+
+
+
+hr{
+    color: red;
+    border: 6px solid;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+
+
+@media (max-width:993px){
+    .recente{
+        margin-top: -10%;
+    }
+    .center{
+        margin-top: 15%;
+    }
+}
+
+@media (max-width: 576px){
+    
+    .box-recomendados{
+        height: 120px;
+    }
+    .box-recomendados img{
+        width: 30%;
+    }
+    .div-img{
+        margin-left: 0px;
+    }
+    .recente{
+        margin-left: 2px;
+    }
+    .center{
+        margin-top: 25%;
+    }
+    
+    
+}
+
+@media (max-width: 433px) {
+    .container-mais{
+        background-color: #EAEAEA;
+    }
+    .box-recomendados{
+        height: 100px;
+    }
+    .box-recomendados img{
+        width: 30%;
+    }
+    .center{
+        margin-top: 45%;
+    }
+    .recente h6{
+        font-size: 12px;
+    }
+   
+   
+}
+
+@media (max-width: 361px){
+    .col-mais p{
+        margin-top: -25%;
+        margin-left: 60%;
+    }
+    
+    
+}
+
+
+@media (max-width: 343px){
+    .col-mais p{
+        margin-top: -20%;
+    }
+    .col-mais h4{
+        text-align: left;
+        font-size: 12px;
+        width: 150px;
+    }
+}
+

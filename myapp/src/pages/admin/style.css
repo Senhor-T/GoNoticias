@@ -1,0 +1,142 @@
+
+  /* .body-profile{
+    background-color: #efefef;
+  } */
+
+  .body-editor{
+    background-color: #efefef;
+  }
+
+  .editor{
+    margin-left: 5%;
+    width: 90%;
+  }
+
+  .form-create{
+    width: 100%;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  }
+
+  .form-create #input{
+    width: 70%;
+    box-shadow: 0 0 0 0;
+    border-radius: 1px;
+    border: 0 none;
+    border-bottom: 1px solid black;
+    outline: 0;
+  }
+
+
+  .div-img-profile{
+    width: 200px;
+    height: 250px;
+    margin-left: 39%;
+  }
+
+  .div-img-profile img{
+    width: 90%;
+    height: 160px;
+    border-radius: 15%;
+    margin-top: 15%;
+  }
+
+  .div-user-sobre{
+    background-color: #EAEAEA;
+
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  .div-user-sobre b{
+    color: #262626;
+  }
+  .div-user-sobre p{
+    color: gray;
+  }
+
+  .col-profile{
+    /* background-image:
+     linear-gradient( 103.3deg,  rgba(252,225,208,1)
+      30%, rgba(255,173,214,1) 55.7%, rgba(162,186,245,1) 81.8% ); */
+      background-image: url(https://wallpaperaccess.com/full/3081484.jpg);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      /* background-color: #BD3039; */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-left: 15%;
+  }
+
+  .row-materias{
+    margin-top: 15%;
+    border: 2px solid rgba(0, 0, 0, 0.16);
+    border-radius: 5px;
+    background-color: #efefef;
+  }
+
+
+  .box-recomendados #nav-rec{
+    width: 90%;
+  }
+
+  .div-delete-button button a{
+    color: white;
+  }
+
+  .group-checkbox input{
+    width: 20px;
+  }
+
+  .admin-painel-user{
+    background-color: #efefef;
+    width: 97%;
+    margin-left: 2%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    border-radius: 10px;
+  }
+
+  .admin-painel-user ul{
+    list-style-type: none;
+  }
+
+  #body-accordion{
+    text-align: left;
+  }
+
+  #header p{
+    color: black;
+  }
+
+
+
+  @media (max-width:1200px){
+    .row-materias{
+      margin-top: 15%;
+    }
+  }
+  @media (max-width:991px){
+    .col-profile{
+      margin-left: auto;
+    }
+  }
+
+  @media (max-width:768px){
+    .row-materias{
+      margin-top: 30%;
+    }
+  }
+
+  @media (max-width:373px){
+    .box-recomendados h4{
+      font-size: 12px;
+      margin-left: 1%;
+    }
+    .div-img-profile{
+      margin-left: 25%;
+    }
+  }
+  
+  
+  
+  

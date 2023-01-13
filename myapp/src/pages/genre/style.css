@@ -1,0 +1,26 @@
+
+.div-back-img{
+    text-align: left;
+    background-color: #EAEAEA;
+    height: 200px;
+    margin-top: 30px;
+}
+
+.div-back-img h2{
+    margin-left: 17%;
+    color: black;
+    font-weight: bolder;
+    border-bottom: 3px solid red;
+    width: 50%;
+}
+
+.div-back-img p{
+    color: gray;
+    margin-left: 12%;
+    font-size: 18px;
+}
+
+.div-back-img h5{
+
+    margin-left: 45%;
+}
