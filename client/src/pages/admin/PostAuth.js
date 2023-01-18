@@ -30,19 +30,15 @@ export default function PostAuth(){
           },
       })
       .then((response) =>{
-          console.log(response.data)
           return response.data
       })
     
-      .catch((error)=>{
-        console.log(error)
+      .catch((err)=>{
+        console.log(err)
         msgType = 'error'
-        return error.response.data
+        return err.response.data
       })
-       
-      
 
-        
         setFlashMessage(data.message, msgType)
         navigate('/user/myprofile')
     }

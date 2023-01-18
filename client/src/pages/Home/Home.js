@@ -196,6 +196,8 @@ const Home = () => {
                 </Row>
             </Container>
 
+            <br />
+            <br />
 
             <Footer />
 

@@ -32,7 +32,6 @@ const EditPost = () => {
 
 
   const { registerPost } = useContext(Context)
-
   const config = useMemo(
     () => ({
       readonly: false,
@@ -78,7 +77,6 @@ const EditPost = () => {
         },
       })
       .then((response) => {
-        console.log(response.data)
         return response.data
       })
       .catch((err) => {
@@ -124,7 +122,7 @@ const EditPost = () => {
           </Form.Group>
           {/* <input type="file" name="image" onChange={e => setImage(e.target.files[0])} required /> */}
           {['radio'].map((type) => (
-        <div key={`inline-${type}`} className="mb-3 group-checkbox">
+        <div key={`inline-${type}`} className="mb-3">
           <Form.Check
             inline
             label="Política"
@@ -146,19 +144,19 @@ const EditPost = () => {
            <Form.Check
             inline
             label="Esportes"
-            name='esportes'
+            name='genero'
             value={true}
             type={type}
-            id={`inline-${type}-2`}
+            id={`inline-${type}-3`}
             onChange={(e) => setEsportes(e.target.value)}
           /> 
           <Form.Check
             inline
             label="Internacional"
-            name='internacional'
+            name='genero'
             value={true}
             type={type}
-            id={`inline-${type}-2`}
+            id={`inline-${type}-4`}
             onChange={(e) => setInternacional(e.target.value)}
           />        
         </div>

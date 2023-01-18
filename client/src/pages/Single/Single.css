@@ -80,7 +80,13 @@
     color:black;
 }
 
+iframe{
+    width: 100% !important;
+ }
 
+.single-content img{
+    max-width: 100% !important;
+}
 
 @media (max-width:768px){
     .single-detalhes-img{

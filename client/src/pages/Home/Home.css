@@ -92,9 +92,9 @@
 
 .col-mais img{
     border-radius: 10px;
-    max-width: 150px;
+    width: 150px;
     height: 120px;
-    width: auto;
+
     margin-top: -20px;
 }
 

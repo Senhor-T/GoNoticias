@@ -55,18 +55,6 @@ useEffect(() => {
 
 const handleSubmit = async (e)=>{
   e.preventDefault()
-  
-
-
-//   var meuArray = [geek, politica]
-//   , novoArray = []
-//   , corte = 1;
-
-// for (var i = 0; i < meuArray.length; i = i + corte) {
-//   novoArray.push(meuArray.slice(i, i + corte));
-// }
-
-// console.log(novoArray);
 
    const posts = {
     titulo,
@@ -89,7 +77,7 @@ const handleSubmit = async (e)=>{
       <br></br>
       <br></br>
     <div className="editor">
-      <Message />
+      
         <Form className='form-create' onSubmit={handleSubmit}>
                <Form.Group controlId="formFile" className="mb-3">
         <Form.Label>Selecione uma imagem</Form.Label>
@@ -107,7 +95,7 @@ const handleSubmit = async (e)=>{
             label="Política"
             name='genero'
             value={true}
-            type={type}
+            type='radio'
             id={`inline-${type}-1`}
             onChange={(e) => setPolitica(e.target.value)}
           />
@@ -116,7 +104,7 @@ const handleSubmit = async (e)=>{
             label="Geek"
             name='genero'
             value={true}
-            type={type}
+            type='radio'
             id={`inline-${type}-2`}
             onChange={(e) => setGeek(e.target.value)}
           />
@@ -125,17 +113,17 @@ const handleSubmit = async (e)=>{
             label="Esportes"
             name='genero'
             value={true}
-            type={type}
-            id={`inline-${type}-2`}
+            type='radio'
+            id={`inline-${type}-3`}
             onChange={(e) => setEsportes(e.target.value)}
           />
           <Form.Check
             inline
             label="Internacional"
-            name='internacional'
+            name='genero'
             value={true}
-            type={type}
-            id={`inline-${type}-2`}
+            type='radio'
+            id={`inline-${type}-4`}
             onChange={(e) => setInternacional(e.target.value)}
           />                 
         </div>

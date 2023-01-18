@@ -1,4 +1,4 @@
-import { NavLink, useParams } from "react-router-dom"
+import { NavLink, Link, useParams } from "react-router-dom"
 import { useEffect, useState } from 'react'
 import api from "../../api/Api"
 import { useFetch } from '../../hooks/useFetch';
@@ -34,10 +34,10 @@ const Single = () => {
                 setPost(res.data)
 
                 const get = api.get(`/users/${res.data.user._id}`)
-                .then((response) => {
-                    console.log(response.data)
-                    setUser(response.data.user)
-                })
+                    .then((response) => {
+
+                        setUser(response.data.user)
+                    })
             } catch (error) {
                 console.log(error)
             }
@@ -45,13 +45,15 @@ const Single = () => {
         fetchData()
     }, [])
 
-console.log(user)
+
 
 
     return (
 
         <div>
 
+            <br />
+            <br />
 
             <Container>
 
@@ -67,18 +69,18 @@ console.log(user)
                                 <img id='imgPost' src={`${process.env.REACT_APP_API_URL}/images/posts/${post.image}`} alt={post.titulo} />
                                 <div className="single-detalhes">
                                     <div className="share">
-                                        <a target="_blank" rel="noopener noreferrer" href={`https://www.facebook.com/sharer/sharer.php?u=http://localhost:8080/${post.slug}`}>
+                                        <a target="_blank" rel="noopener noreferrer" href={`https://www.facebook.com/sharer/sharer.php?u=http://gonoticias.s3-website-us-east-1.amazonaws.com/${post.slug}`}>
                                             <BsFacebook />
                                         </a>
                                         <a target="_blank" rel="noopener noreferrer" href=
-                                            {`https://t.me/share/url?url=${post.titulo}http://localhost:8080/${post.slug}`}>
+                                            {`https://t.me/share/url?url=${post.titulo}http://gonoticias.s3-website-us-east-1.amazonaws.com/${post.slug}`}>
                                             <BsTelegram />
                                         </a>
-                                        <a target="_blank" rel="noopener noreferrer" href={`https://twitter.com/intent/tweet?text=${post.titulo}&url=http://localhost:8080/${post.slug}`}>
+                                        <a target="_blank" rel="noopener noreferrer" href={`https://twitter.com/intent/tweet?text=${post.titulo}&url=http://gonoticias.s3-website-us-east-1.amazonaws.com/${post.slug}`}>
                                             <BsTwitter />
                                         </a>
                                         <a target="_blank" rel="noopener noreferrer" href={
-                                            `https://api.whatsapp.com/send?text=${post.titulo}http://localhost:8080/${post.slug}`}>
+                                            `https://api.whatsapp.com/send?text=${post.titulo}+-+GoNoticias+-+http%3A%2F%2Fgonoticias.s3-website-us-east-1.amazonaws.com/${post.slug}`}>
                                             <ImWhatsapp />
                                         </a>
 
@@ -106,16 +108,16 @@ console.log(user)
                                         {postRecente && postRecente.slice(4, 12).map(posts => (
                                             <Col lg={12}>
                                                 <div className='box-recomendados'>
-                                                    <img src={`${process.env.REACT_APP_API_URL}images/posts/${post.image}`} alt={posts.titulo} />
-                                                    <NavLink to={`/${posts.slug}`}><h4>{posts.titulo}</h4></NavLink>
+                                                    <img src={`${process.env.REACT_APP_API_URL}images/posts/${posts.image}`} alt={posts.titulo} />
+                                                    <a href={`http://gonoticias.s3-website-us-east-1.amazonaws.com/${posts.slug}`}><h4>{posts.titulo.substring(0, 100)}...</h4></a>
                                                 </div>
                                                 <br />
                                                 <br />
                                             </Col>
-                                            
+
                                         ))}
-                                       
-                                    <Footer />
+
+                                        <Footer />
 
                                     </Row>
                                 </Container>
@@ -125,10 +127,10 @@ console.log(user)
 
                     </Col>
                 </Row>
-                    
+
             </Container>
 
-           
+
 
         </div>
 

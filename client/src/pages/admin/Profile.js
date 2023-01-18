@@ -142,6 +142,9 @@ const Profile = () => {
 
   }
 
+  const [modalData, setModalData] = useState(null)
+  const [modalDataPost, setModalDataPost] = useState(null)
+
   const handleRemove = async (_id) => {
     api.delete(`/posts/delete/${_id}`)
       .then(async () => {
@@ -548,7 +551,7 @@ const Profile = () => {
                 {posts && posts.map((post) => (
                   <div>
                     <div className='box-recomendados' key={post._id}>
-                      <img src={`${process.env.REACT_APP_API_URL}images/posts/${post.image}`} alt={post.titulo} />
+                      <img id='img-recomendados' src={`${process.env.REACT_APP_API_URL}images/posts/${post.image}`} alt={post.titulo} />
                       <NavLink id='nav-rec' to={`/${post.slug}`}><h4>{post.titulo.substring(0, 60)}...</h4></NavLink>
 
                       <div className='div-delete-button'>
@@ -558,7 +561,7 @@ const Profile = () => {
                       </div>
                       -
                       <div className='div-delete-button'>
-                        <Button variant="danger" onClick={() => handleShow5(true)}><BsFillTrashFill /></Button>
+                        <Button variant="danger" onClick={() => {handleShow5(true);setModalData(post)}}><BsFillTrashFill /></Button>
                       </div>
                     </div>
 
@@ -573,7 +576,7 @@ const Profile = () => {
                                   <Button variant="secondary" onClick={handleClose5}>
                                     Cancelar
                                   </Button>
-                                  <Button variant="danger" onClick={() => { handleClose5(true);handleRemove(post._id) }}>
+                                  <Button variant="danger" onClick={() => { handleClose5(true);handleRemove(modalData._id) }}>
                                     Excluir
                                   </Button>
                                 </Modal.Footer>
