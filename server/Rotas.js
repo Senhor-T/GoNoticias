@@ -46,16 +46,7 @@ router.get('/:slug',async(req,res)=>{
     return res.status(200).json(posts)
 })
 
-router.get('/users/favoritos/:id',async(req,res)=>{
-    const users = await Users.findOne({_id:req.params.id}).exec()
-    return res.status(200).json(users)
-})
 
-
-// router.get('/get/user',async(req,res)=>{
-//     const users = await Users.find().sort('-createdAt')
-//     res.json(users)
-// })
 
 
 
